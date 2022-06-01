@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
 {
-    internal class Questao01Tests
+    public class Questao01Tests
     {
     }
 }
