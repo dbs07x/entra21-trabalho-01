@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrabalhoOrientacaoObjetos01.Tests.Questao02
+namespace TrabalhoOrientacaoObjetos01.Questao01
 {
-    public class Questao02Tests
+    internal class ExecutarNumero
     {
     }
 }

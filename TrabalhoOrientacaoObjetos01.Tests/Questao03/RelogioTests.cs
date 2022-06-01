@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Tests.Questao03
 {
-    public class Questao03Tests
+    public class RelogioTests
     {
     }
 }
