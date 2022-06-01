@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrabalhoOrientacaoObjetos01", "TrabalhoOrientacaoObjetos01\TrabalhoOrientacaoObjetos01.csproj", "{B9310B35-3174-4A90-895B-624CC6C60988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrabalhoOrientacaoObjetos01", "TrabalhoOrientacaoObjetos01\TrabalhoOrientacaoObjetos01.csproj", "{B9310B35-3174-4A90-895B-624CC6C60988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrabalhoOrientacaoObjetos01.Tests", "TrabalhoOrientacaoObjetos01.Tests\TrabalhoOrientacaoObjetos01.Tests.csproj", "{2EED5DB6-59F5-42B5-B1C8-5E9A5D2C1FCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B9310B35-3174-4A90-895B-624CC6C60988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9310B35-3174-4A90-895B-624CC6C60988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9310B35-3174-4A90-895B-624CC6C60988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EED5DB6-59F5-42B5-B1C8-5E9A5D2C1FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EED5DB6-59F5-42B5-B1C8-5E9A5D2C1FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EED5DB6-59F5-42B5-B1C8-5E9A5D2C1FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EED5DB6-59F5-42B5-B1C8-5E9A5D2C1FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
