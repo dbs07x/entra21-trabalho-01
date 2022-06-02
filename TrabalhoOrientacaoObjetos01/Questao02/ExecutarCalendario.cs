@@ -8,5 +8,10 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
 {
     public class ExecutarCalendario
     {
+        public void Executar()
+        {
+
+        }
+
     }
 }
