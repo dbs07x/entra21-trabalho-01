@@ -46,6 +46,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
 
 Escolha uma das opções do menu: ");
                 var escolhaUsuario = Convert.ToInt32(Console.ReadLine());
+                Console.Write("\n");
                 if (escolhaUsuario == 1)
                 {
                     Console.WriteLine($"O dia por extenso é: {executarCalendario.ObterDiaPorExtenso()}");
@@ -66,6 +67,7 @@ Escolha uma das opções do menu: ");
                 {
                     break;
                 }
+                Console.Write("\n");
             }
         }
 
