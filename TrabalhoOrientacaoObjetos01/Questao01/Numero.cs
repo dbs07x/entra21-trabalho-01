@@ -37,13 +37,68 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
     {
         public double NumeroSolicitado;
 
+        //Como os métodos solicitados vão até unidade de milhar, definimos que o valor máximo permitido será 9999,99
         public string ObterDecimalPorExtenso()
         {
-            var decimalPorExtenso = "";
-            string numeroSolicitadoString = NumeroSolicitado.ToString().Substring(2, 4);
+            string decimalPorExtenso = "";
+            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
+            int posicaoUnidadeDecimal = posicaoVirgulaDecimal + 2;
+            int posicaoDezenaDecimal = posicaoVirgulaDecimal + 1;
+            int unidadeDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoUnidadeDecimal));
+            int dezenaDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoDezenaDecimal, posicaoDezenaDecimal)); //<<<<<<<<<<<< Verificar
+
+            if ((unidadeDecimal == 0) && (dezenaDecimal == 0))
+            {
+                //?
+            }
+
+            else if ((unidadeDecimal == 1) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "um";
+            }
+
+            else if ((unidadeDecimal == 2) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "dois";
+            }
+
+            else if ((unidadeDecimal == 3) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "três";
+            }
+
+            else if ((unidadeDecimal == 4) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "quatro";
+            }
+
+            else if ((unidadeDecimal == 5) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "cinco";
+            }
+
+            else if ((unidadeDecimal == 6) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "seis";
+            }
+
+            else if ((unidadeDecimal == 7) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "sete";
+            }
+
+            else if ((unidadeDecimal == 8) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "oito";
+            }
+
+            else if ((unidadeDecimal == 9) && (dezenaDecimal == 0))
+            {
+                decimalPorExtenso = "nove";
+            }
 
             return decimalPorExtenso;
         }
-
     }
 }
