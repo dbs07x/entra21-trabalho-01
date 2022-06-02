@@ -162,7 +162,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             }
             else if (Data.ToString("dd/MM/yyyy").Substring(4, 1) == "5" && Data.ToString("dd/MM/yyyy").Substring(3, 1) == "0")
             {
-                numeroPorExtenso = "maior";
+                numeroPorExtenso = "maio";
             }
             else if (Data.ToString("dd/MM/yyyy").Substring(4, 1) == "6" && Data.ToString("dd/MM/yyyy").Substring(3, 1) == "0")
             {
