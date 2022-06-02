@@ -10,12 +10,13 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
     {
         public DateTime Data;
 
-        //public string ObterDiaPorExtenso()
-        //{
-        //    var diaPorExtenso = "";
+        public string ObterDiaPorExtenso()
+        {
+            var diaPorExtenso = "";
 
-        //    return diaPorExtenso;
-        //}
+
+            return diaPorExtenso;
+        }
 
         //public string ObterMesPorExtenso()
         //{
