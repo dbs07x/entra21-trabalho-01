@@ -11,11 +11,13 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
         public void Executar()
         {
             Relogio relogio = new Relogio();
-            Console.WriteLine("Digite um horário: ");
+            Console.WriteLine("Digite um horário neste formatado (hh:mm:ss): ");
             relogio.Hora = Convert.ToDateTime(Console.ReadLine());
             Console.WriteLine(@$"Hora:  { relogio.ObterHoraPorExtenso()}
 Minuto: {relogio.ObterMinutoPorExtenso()}
 Segundo: {relogio.ObterSegundoPorExtenso()}");
+            Console.WriteLine("==================================");
+            Console.WriteLine($"Hora por extenso completo: {relogio.ObterHoraCompletaPorExtenso()}");
 
 
         }
