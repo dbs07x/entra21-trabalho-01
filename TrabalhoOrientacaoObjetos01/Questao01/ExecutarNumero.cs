@@ -8,5 +8,9 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 {
     internal class ExecutarNumero
     {
+        public void Executar()
+        {
+
+        }
     }
 }
