@@ -601,5 +601,59 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             return unidadePorExtenso;
         }
+        public string ObterDezenaPorExtenso()
+        {
+            string dezenaPorExtenso = "";
+            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
+            int dezena = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 2, 1));
+
+            if (dezena == 1)
+            {
+                dezenaPorExtenso = "dez";
+            }
+
+            if (dezena == 2)
+            {
+                dezenaPorExtenso = "vinte";
+            }
+
+            if (dezena == 3)
+            {
+                dezenaPorExtenso = "trinta";
+            }
+
+            if (dezena == 4)
+            {
+                dezenaPorExtenso = "quarenta";
+            }
+
+            if (dezena == 5)
+            {
+                dezenaPorExtenso = "cinquenta";
+            }
+
+            if (dezena == 6)
+            {
+                dezenaPorExtenso = "sessenta";
+            }
+
+            if (dezena == 7)
+            {
+                dezenaPorExtenso = "setenta";
+            }
+
+            if (dezena == 8)
+            {
+                dezenaPorExtenso = "oitenta";
+            }
+
+            if (dezena == 9)
+            {
+                dezenaPorExtenso = "noventa";
+            }
+
+            return dezenaPorExtenso;
+        }
     }
 }
