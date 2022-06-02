@@ -10,7 +10,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
     {
         public DateTime Hora;
         
-        public 
+       
         
 
     }

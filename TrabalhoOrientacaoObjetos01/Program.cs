@@ -15,12 +15,13 @@ if (menu == 1)
     ExecutarNumero executarNumero = new ExecutarNumero();
     executarNumero.Executar();
 }
-if (menu == 2)
+else if (menu == 2)
 {
     ExecutarCalendario executarCalendario = new ExecutarCalendario();
     executarCalendario.Executar();
 }
-if (menu == 3)
+else if (menu == 3)
 {
     ExecutarRelogio executarRelogio = new ExecutarRelogio();
     executarRelogio.Executar();
+}
