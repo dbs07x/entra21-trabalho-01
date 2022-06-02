@@ -73,7 +73,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     Console.WriteLine("Número completo por extenso: " + numero.ObterNumeroCompletoPorExtenso());
                 }
                 Console.Write("\n");
-            }
+            }   
         }
     }
 }
