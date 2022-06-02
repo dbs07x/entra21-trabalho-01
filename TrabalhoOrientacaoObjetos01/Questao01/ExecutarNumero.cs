@@ -46,7 +46,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     Numero numero = new Numero();
                     Console.WriteLine("Digite um número: ");
                     numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Unidade por extenso: " + numero.ObterDezenaPorExtenso());
+                    Console.WriteLine("Dezena por extenso: " + numero.ObterDezenaPorExtenso());
                 }
 
                 if (menu == 4)
@@ -54,7 +54,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     Numero numero = new Numero();
                     Console.WriteLine("Digite um número: ");
                     numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Unidade por extenso: " + numero.ObterCentenaPorExtenso());
+                    Console.WriteLine("Centena por extenso: " + numero.ObterCentenaPorExtenso());
                 }
 
                 if (menu == 5)
@@ -62,7 +62,15 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     Numero numero = new Numero();
                     Console.WriteLine("Digite um número: ");
                     numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Unidade por extenso: " + numero.ObterUnidadeDeMilharPorExtenso());
+                    Console.WriteLine("Unidade de milhar por extenso: " + numero.ObterUnidadeDeMilharPorExtenso());
+                }
+
+                if (menu == 6)
+                {
+                    Numero numero = new Numero();
+                    Console.WriteLine("Digite um número: ");
+                    numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Número completo por extenso: " + numero.ObterNumeroCompletoPorExtenso());
                 }
                 Console.Write("\n");
             }

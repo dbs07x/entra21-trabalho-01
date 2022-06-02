@@ -763,5 +763,35 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             return milharPorExtenso;
         }
+        //public string ObterNumeroCompletoPorExtenso()
+        //{
+        //    string numeroCompletoPorExtenso = "";
+        //    string numeroSolicitadoString = NumeroSolicitado.ToString();
+        //    int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
+
+        //    if (NumeroSolicitado < 1)
+        //    {
+        //        numeroCompletoPorExtenso = ObterDecimalPorExtenso();
+        //    }
+
+        //    if ((NumeroSolicitado < 10) && (NumeroSolicitado >= 1))
+        //    {
+        //        numeroCompletoPorExtenso = ObterUnidadePorExtenso() + " e " + ObterDecimalPorExtenso(); //Adicionar exceção para 1,00 por causa do e
+        //    }
+
+        //    if ((NumeroSolicitado < 100) && (NumeroSolicitado >= 10))
+        //    {
+        //        numeroCompletoPorExtenso = ObterDezenaPorExtenso() + " e " + ObterUnidadePorExtenso() + " e " + ObterDecimalPorExtenso();
+        //    }
+
+        //    if ((NumeroSolicitado < 1000) && (NumeroSolicitado >= 100))
+        //    {
+        //        numeroCompletoPorExtenso = ObterCentenaPorExtenso() + " e " + ObterDezenaPorExtenso() + " e " + ObterUnidadePorExtenso() + " e " + ObterDecimalPorExtenso();
+        //    }
+
+        //    return numeroCompletoPorExtenso;
+        //}
+
+
     }
 }
