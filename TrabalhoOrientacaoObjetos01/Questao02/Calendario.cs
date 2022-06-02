@@ -14,7 +14,6 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
         {
             var diaPorExtenso = "";
 
-
             return diaPorExtenso;
         }
 
