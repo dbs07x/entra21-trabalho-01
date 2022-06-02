@@ -277,7 +277,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else { }
 
             string dezenaPorExtenso = "";
-            if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "1" )
+            if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "1" && Data.ToString("dd/MM/yyyy").Substring(9, 1) == "0")
             {
                 dezenaPorExtenso = "dez";
             }
@@ -317,35 +317,35 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             {
                 dezenaPorExtenso = "dezenove";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "2" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "2")
             {
                 dezenaPorExtenso = "vinte";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "3" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "3")
             {
                 dezenaPorExtenso = "trinta";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "4" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "4")
             {
                 dezenaPorExtenso = "quarenta";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "5" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "5")
             {
                 dezenaPorExtenso = "cinquenta";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "6" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "6")
             {
                 dezenaPorExtenso = "sessenta";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "7" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "7")
             {
                 dezenaPorExtenso = "setenta";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "8" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "8")
             {
                 dezenaPorExtenso = "oitenta";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "9" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "9")
             {
                 dezenaPorExtenso = "noventa";
             }
@@ -355,39 +355,39 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             }
 
             string unidadePorExtenso = "";
-            if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "1")
+            if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "1" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "um";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "2")
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "2" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "dois";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "3" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "3" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "três";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "4" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "4" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "quatro";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "5" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "5" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "cinco";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "6" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "6" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "seis";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "7" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "7" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "sete";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "8" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "8" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "oito";
             }
-            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "9" )
+            else if (Data.ToString("dd/MM/yyyy").Substring(9, 1) == "9" && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "1")
             {
                 unidadePorExtenso = "nove";
             }
@@ -410,17 +410,38 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.ToString("dd/MM/yyyy").Substring(6, 1) == "0" && Data.ToString("dd/MM/yyyy").Substring(7, 1) == "0"
                 && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
             {
-                anoPorExtenso = dezenaPorExtenso + " e " + unidadePorExtenso;
+                if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "1" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
+                {
+                    anoPorExtenso = dezenaPorExtenso;
+                }
+                else
+                {
+                    anoPorExtenso = dezenaPorExtenso + " e " + unidadePorExtenso;
+                }
             }
             else if (Data.ToString("dd/MM/yyyy").Substring(6, 1) == "0" && Data.ToString("dd/MM/yyyy").Substring(7, 1) != "0"
                 && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
             {
-                anoPorExtenso = centenaPorExtenso + " e " + dezenaPorExtenso + " e " + unidadePorExtenso;
+                if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "1" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
+                {
+                    anoPorExtenso = centenaPorExtenso + " e " + dezenaPorExtenso;
+                }
+                else
+                {
+                    anoPorExtenso = centenaPorExtenso + " e " + dezenaPorExtenso + " e " + unidadePorExtenso;
+                }
             }
             else if (Data.ToString("dd/MM/yyyy").Substring(6, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(7, 1) != "0"
                 && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
             {
-                anoPorExtenso = milharPorExtenso + " e " + centenaPorExtenso + " e " + dezenaPorExtenso + " e " + unidadePorExtenso;
+                if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "1" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
+                {
+                    anoPorExtenso = milharPorExtenso + " e " + centenaPorExtenso + " e " + dezenaPorExtenso;
+                }
+                else
+                {
+                    anoPorExtenso = milharPorExtenso + " e " + centenaPorExtenso + " e " + dezenaPorExtenso + " e " + unidadePorExtenso;
+                }
             }
             else if (Data.ToString("dd/MM/yyyy").Substring(6, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(7, 1) != "0"
                 && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(9, 1) == "0")
@@ -445,7 +466,14 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (Data.ToString("dd/MM/yyyy").Substring(6, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(7, 1) == "0"
                && Data.ToString("dd/MM/yyyy").Substring(8, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
             {
-                anoPorExtenso = milharPorExtenso + " e " + dezenaPorExtenso + " e " + unidadePorExtenso;
+                if (Data.ToString("dd/MM/yyyy").Substring(8, 1) == "1" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
+                {
+                    anoPorExtenso = milharPorExtenso + " e " + dezenaPorExtenso;
+                }
+                else
+                {
+                    anoPorExtenso = milharPorExtenso + " e " + dezenaPorExtenso + " e " + unidadePorExtenso;
+                }
             }
             else if (Data.ToString("dd/MM/yyyy").Substring(6, 1) != "0" && Data.ToString("dd/MM/yyyy").Substring(7, 1) == "0"
                && Data.ToString("dd/MM/yyyy").Substring(8, 1) == "0" && Data.ToString("dd/MM/yyyy").Substring(9, 1) != "0")
@@ -481,12 +509,12 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             return anoPorExtenso;
         }
 
-        //public string ObterDataCompletaPorExtenso()
-        //{
-        //    var dataCompletaPorExtenso = "";
-
-        //    return dataCompletaPorExtenso;
-        //}
+        public string ObterDataCompletaPorExtenso()
+        {
+            var dataCompletaPorExtenso = ObterDiaPorExtenso() + " de " + ObterMesPorExtenso().ToLower() + " de " + ObterAnoPorExtenso().ToLower();
+            
+            return dataCompletaPorExtenso;
+        }
 
     }
 }
