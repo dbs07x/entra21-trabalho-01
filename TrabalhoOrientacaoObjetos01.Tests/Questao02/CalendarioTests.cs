@@ -104,5 +104,27 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao02
             // Assert
             anoObtido.Should().Be(anoEsperado);
         }
+
+        [Theory]
+        [InlineData("1970/01/01", "Um de janeiro de mil e novecentos e setenta")] [InlineData("1980/02/11", "Onze de fevereiro de mil e novecentos e oitenta")]
+        [InlineData("1990/03/13", "Treze de março de mil e novecentos e noventa")] [InlineData("2000/04/21", "Vinte e um de abril de dois mil")]
+        [InlineData("2010/05/25", "Vinte e cinco de maio de dois mil e dez")] [InlineData("2020/06/30", "Trinta de junho de dois mil e vinte")]
+        [InlineData("2030/07/31", "Trinta e um de julho de dois mil e trinta")] [InlineData("1000/08/30", "Trinta de agosto de mil")]
+        [InlineData("0500/09/25", "Vinte e cinco de setembro de quinhentos")] [InlineData("0011/10/17", "Dezessete de outubro de onze")]
+        [InlineData("0009/11/12", "Doze de novembro de nove")] [InlineData("0001/12/29", "Vinte e nove de dezembro de um")]
+
+        public void Validar_ObterDataCompletaPorExtenso_Para_Doze_Datas_Diferentes_Sendo_Cada_Uma_Em_Um_Mes_Diferente(DateTime data, string dataCompletaPorExtenso)
+        {
+            // Arrange
+            Calendario calendarioTeste = new Calendario();
+            calendarioTeste.Data = data;
+
+            // Act
+            string dataCompletaObtida = calendarioTeste.ObterDataCompletaPorExtenso();
+            string dataCompletaEsperada = dataCompletaPorExtenso;
+
+            // Assert
+            dataCompletaObtida.Should().Be(dataCompletaEsperada);
+        }
     }
 }
