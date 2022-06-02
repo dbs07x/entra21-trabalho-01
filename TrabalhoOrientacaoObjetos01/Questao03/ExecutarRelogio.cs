@@ -13,7 +13,9 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             Relogio relogio = new Relogio();
             Console.WriteLine("Digite um horário: ");
             relogio.Hora = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Hora: " + relogio.ObterHoraPorExtenso());
+            Console.WriteLine(@$"Hora:  { relogio.ObterHoraPorExtenso()}
+Minuto: {relogio.ObterMinutoPorExtenso()}
+Segundo: {relogio.ObterSegundoPorExtenso()}");
 
 
         }
