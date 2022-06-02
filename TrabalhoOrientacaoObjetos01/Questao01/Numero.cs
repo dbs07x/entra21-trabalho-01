@@ -547,5 +547,59 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             return decimalPorExtenso;
         }
+        public string ObterUnidadePorExtenso()
+        {
+            string unidadePorExtenso = "";
+            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
+            int unidade = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 1, 1));
+
+            if (unidade == 1)
+            {
+                unidadePorExtenso = "um";
+            }
+
+            if (unidade == 2)
+            {
+                unidadePorExtenso = "dois";
+            }
+
+            if (unidade == 3)
+            {
+                unidadePorExtenso = "três";
+            }
+
+            if (unidade == 4)
+            {
+                unidadePorExtenso = "quatro";
+            }
+
+            if (unidade == 5)
+            {
+                unidadePorExtenso = "cinco";
+            }
+
+            if (unidade == 6)
+            {
+                unidadePorExtenso = "seis";
+            }
+
+            if (unidade == 7)
+            {
+                unidadePorExtenso = "sete";
+            }
+
+            if (unidade == 8)
+            {
+                unidadePorExtenso = "oito";
+            }
+
+            if (unidade == 9)
+            {
+                unidadePorExtenso = "nove";
+            }
+
+            return unidadePorExtenso;
+        }
     }
 }
