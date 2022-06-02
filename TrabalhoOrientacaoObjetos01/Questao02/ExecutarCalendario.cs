@@ -35,7 +35,11 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             Console.Write("Digite a data: ");
             executarCalendario.Data = Convert.ToDateTime(Console.ReadLine());
 
-            Console.Write($"A data é: {executarCalendario.Data.ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"A data é: {executarCalendario.Data.ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"O dia é: {executarCalendario.ObterDiaPorExtenso()}");
+            Console.WriteLine($"O mês é: {executarCalendario.ObterMesPorExtenso()}");
+            Console.WriteLine($"O milhar é: {executarCalendario.Data.ToString("dd/MM/yyyy").Substring(6, 1)}");
+            Console.WriteLine($"O ano é: {executarCalendario.ObterAnoPorExtenso()}");
         }
         
     }
