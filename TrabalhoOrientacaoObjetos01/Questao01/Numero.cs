@@ -655,5 +655,63 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             return dezenaPorExtenso;
         }
+        public string ObterCentenaPorExtenso()
+        {
+            string centenaPorExtenso = "";
+            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
+            int centena = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 3, 1));
+
+            if (centena == 1)
+            {
+                centenaPorExtenso = "cem";
+            }
+
+            if (centena == 2)
+            {
+                centenaPorExtenso = "duzentos";
+            }
+
+            if (centena == 3)
+            {
+                centenaPorExtenso = "trezentos";
+            }
+
+            if (centena == 4)
+            {
+                centenaPorExtenso = "quatrocentos";
+            }
+
+            if (centena == 5)
+            {
+                centenaPorExtenso = "quinhentos";
+            }
+
+            if (centena == 6)
+            {
+                centenaPorExtenso = "seiscentos";
+            }
+
+            if (centena == 7)
+            {
+                centenaPorExtenso = "setecentos";
+            }
+
+            if (centena == 8)
+            {
+                centenaPorExtenso = "oitocentos";
+            }
+
+            if (centena == 9)
+            {
+                centenaPorExtenso = "novecentos";
+            }
+
+            return centenaPorExtenso;
+        }
+        public string ObterUnidadeDeMilharPorExtenso()
+        {
+
+        }
     }
 }

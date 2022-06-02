@@ -21,7 +21,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 5 - ObterUnidadeDeMilharPorExtenso
 6 - ObterNumeroCompletoPorExtenso
 ");
-
+                Console.Write("\n");
                 Console.WriteLine("Escolha um item no menu: ");
                 var menu = Convert.ToInt32(Console.ReadLine());
 
@@ -40,6 +40,23 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Unidade por extenso: " + numero.ObterUnidadePorExtenso());
                 }
+
+                if (menu == 3)
+                {
+                    Numero numero = new Numero();
+                    Console.WriteLine("Digite um número: ");
+                    numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Unidade por extenso: " + numero.ObterDezenaPorExtenso());
+                }
+
+                if (menu == 4)
+                {
+                    Numero numero = new Numero();
+                    Console.WriteLine("Digite um número: ");
+                    numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Unidade por extenso: " + numero.ObterCentenaPorExtenso());
+                }
+                Console.Write("\n");
             }
         }
     }
