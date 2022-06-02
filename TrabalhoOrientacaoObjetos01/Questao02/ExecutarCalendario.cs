@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao02
 {
-    internal class ExecutarCalendario
+    public class ExecutarCalendario
     {
     }
 }
