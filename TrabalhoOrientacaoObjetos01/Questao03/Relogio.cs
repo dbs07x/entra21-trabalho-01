@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 namespace TrabalhoOrientacaoObjetos01.Questao03
 {
     public class Relogio
-
     {
+        public DateTime Hora;
+        
+        public 
+        
+
     }
 }
