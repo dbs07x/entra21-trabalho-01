@@ -32,7 +32,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
         public void Executar()
         {
             Calendario executarCalendario = new Calendario();
-            Console.Write("Digite a data: ");
+            Console.Write("Digite a data no formato dd/mm/yyyy : ");
             executarCalendario.Data = Convert.ToDateTime(Console.ReadLine());
             string opcao = "true";
             while (opcao == "true")
