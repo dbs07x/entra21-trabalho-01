@@ -711,7 +711,57 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         }
         public string ObterUnidadeDeMilharPorExtenso()
         {
+            string milharPorExtenso = "";
+            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
+            int milhar = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 4, 1));
 
+            if (milhar == 1)
+            {
+                milharPorExtenso = "mil";
+            }
+
+            if (milhar == 2)
+            {
+                milharPorExtenso = "dois mil";
+            }
+
+            if (milhar == 3)
+            {
+                milharPorExtenso = "três mil";
+            }
+
+            if (milhar == 4)
+            {
+                milharPorExtenso = "quatro mil";
+            }
+
+            if (milhar == 5)
+            {
+                milharPorExtenso = "cinco mil";
+            }
+
+            if (milhar == 6)
+            {
+                milharPorExtenso = "seis mil";
+            }
+
+            if (milhar == 7)
+            {
+                milharPorExtenso = "sete mil";
+            }
+
+            if (milhar == 8)
+            {
+                milharPorExtenso = "oito mil";
+            }
+
+            if (milhar == 9)
+            {
+                milharPorExtenso = "nove mil";
+            }
+
+            return milharPorExtenso;
         }
     }
 }

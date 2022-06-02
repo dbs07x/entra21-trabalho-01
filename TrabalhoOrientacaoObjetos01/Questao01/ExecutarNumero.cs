@@ -56,6 +56,14 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Unidade por extenso: " + numero.ObterCentenaPorExtenso());
                 }
+
+                if (menu == 5)
+                {
+                    Numero numero = new Numero();
+                    Console.WriteLine("Digite um número: ");
+                    numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Unidade por extenso: " + numero.ObterUnidadeDeMilharPorExtenso());
+                }
                 Console.Write("\n");
             }
         }
