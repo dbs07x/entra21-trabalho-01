@@ -384,7 +384,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             }
             else if ((primeiroCaracterSegundos == 0) && (segundoCaracterSegundos == 1))
             {
-                segundoPorExtenso = "um segundo";
+                segundoPorExtenso = "Um segundo";
             }
             else if ((primeiroCaracterSegundos == 0) && (segundoCaracterSegundos == 2))
             {
@@ -396,7 +396,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             }
             else if ((primeiroCaracterSegundos == 0) && (segundoCaracterSegundos == 4))
             {
-                segundoPorExtenso = "quatro segundos";
+                segundoPorExtenso = "Quatro segundos";
             }
             else if ((primeiroCaracterSegundos == 0) && (segundoCaracterSegundos == 5))
             {

@@ -84,17 +84,45 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao03
 
 
         [Theory]
-        [InlineData("00:00:12", "Zero segundos")]
-        [InlineData("00:01:12", "Um segundos")]
-        [InlineData("00:02:12", "Dois segundos")]
-        [InlineData("00:03:12", "Três segundos")]
-        [InlineData("00:04:12", "Quatro segundos")]
-        [InlineData("00:05:12", "Cinco segundos")]
-        [InlineData("00:06:12", "Seis segundos")]
-        [InlineData("00:07:12", "Sete segundos")]
-        [InlineData("00:08:12", "Oito segundos")]
-        [InlineData("00:09:12", "Nove segundos")]
-        [InlineData("00:10:12", "Dez segundos")]
+        [InlineData("01:00:12", "Uma hora e Zero minutos e Doze segundos")]
+        [InlineData("03:01:12", "Três horas e Um minuto e Doze segundos")]
+        [InlineData("05:02:05", "Cinco horas e Dois minutos e Cinco segundos")]
+        [InlineData("09:12:09", "Nove horas e Doze minutos e Nove segundos")]
+        [InlineData("11:04:52", "Onze horas e Quatro minutos e Cinquenta e dois segundos")]
+        [InlineData("12:05:42", "Doze horas e Cinco minutos e Quarenta e dois segundos")]
+        [InlineData("14:06:22", "Quatorze horas e Seis minutos e Vinte e dois segundos")]
+        [InlineData("16:07:12", "Dezesseis horas e Sete minutos e Doze segundos")]
+        [InlineData("18:08:02", "Dezoito horas e Oito minutos e Dois segundos")]
+        [InlineData("19:09:16", "Dezenove horas e Nove minutos e Dezesseis segundos")]
+        [InlineData("20:10:39", "Vinte horas e Dez minutos e Trinta e nove segundos")]
+
+        public void Validar_ObterHoraCompletaPorExtenso_10_Horas_Completas(DateTime horaCompleta, string horaCompletaPorExtenso)
+        {
+            //Arrange
+            Relogio relogioTeste = new Relogio();
+            relogioTeste.Hora = horaCompleta;
+
+            //act
+            string horaCompletaObtida = relogioTeste.ObterHoraCompletaPorExtenso();
+            string horaCompletaEsperada = horaCompletaPorExtenso;
+
+            //assert
+            horaCompletaObtida.Should().Be(horaCompletaEsperada);
+        }
+
+
+        [Theory]
+        [InlineData("00:00:00", "Zero segundos")]
+        [InlineData("00:01:01", "Um segundo")]
+        [InlineData("00:02:02", "Dois segundos")]
+        [InlineData("00:03:03", "Três segundos")]
+        [InlineData("00:04:04", "Quatro segundos")]
+        [InlineData("00:05:05", "Cinco segundos")]
+        [InlineData("00:06:06", "Seis segundos")]
+        [InlineData("00:07:07", "Sete segundos")]
+        [InlineData("00:08:08", "Oito segundos")]
+        [InlineData("00:09:09", "Nove segundos")]
+        [InlineData("00:10:10", "Dez segundos")]
 
         public void Validar_ObterSegundosPorExtenso_Todos_Segundos(DateTime hora, string segundoPorExtenso)
         {
@@ -110,6 +138,5 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao03
             segundoObtido.Should().Be(segundoEsperado);
 
         }
-
     }
 }
