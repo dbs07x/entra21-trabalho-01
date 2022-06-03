@@ -49,11 +49,11 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
         [InlineData(2.00, "dois")]
         [InlineData(3.00, "três")]
         [InlineData(4.00, "quatro")]
-        [InlineData(5.01, "cinco")]
-        [InlineData(6.01, "seis")]
-        [InlineData(7.01, "sete")]
-        [InlineData(8.01, "oito")]
-        [InlineData(9.01, "nove")]
+        [InlineData(5.00, "cinco")]
+        [InlineData(6.00, "seis")]
+        [InlineData(7.00, "sete")]
+        [InlineData(8.00, "oito")]
+        [InlineData(9.00, "nove")]
 
         public void ValidarTodosNumerosMenoresQueDez(double numeroSolicitado, string unidadePorExtenso)
         {
@@ -66,6 +66,30 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
 
             //Assert
             obterUnidadePorExtenso.Should().Be(unidadePorExtenso);
+        }
+
+        [Theory]
+        [InlineData(11.00, "onze")]
+        [InlineData(22.00, "vinte e dois")]
+        [InlineData(33.00, "trinta e três")]
+        [InlineData(44.00, "quarenta e quatro")]
+        [InlineData(55.00, "cinquenta e cinco")]
+        [InlineData(66.00, "sessenta e seis")]
+        [InlineData(77.00, "setenta e sete")]
+        [InlineData(88.00, "oitenta e oito")]
+        [InlineData(99.00, "noventa e nove")]
+
+        public void ValidarTodosNumerosMenoresQueCem(double numeroSolicitado, string centenaPorExtenso)
+        {
+            //Arrange
+            var numero = new Numero();
+            numero.NumeroSolicitado = numeroSolicitado;
+
+            //Act
+            var obterCentenaPorExtenso = numero.ObterCentenaPorExtenso();
+
+            //Assert
+            obterCentenaPorExtenso.Should().Be(centenaPorExtenso);
         }
 
     }
