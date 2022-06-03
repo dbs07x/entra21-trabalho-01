@@ -9,6 +9,7 @@ using Xunit;
 
 namespace TrabalhoOrientacaoObjetos01.Tests.Questao02
 {
+    // Aluno: Gustavo Lemos
     public class CalendarioTests
     {
         [Theory]
