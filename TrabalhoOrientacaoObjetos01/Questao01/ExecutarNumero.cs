@@ -4,6 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Aluno: Douglas Braatz de Souza
+
+/*-Classe Principal:
+-Conter método executar, instanciando objeto da classe citada acima,
+permitindo o usuário escolher qual dos métodos citados acima ele deseja
+executar.*/
+
 namespace TrabalhoOrientacaoObjetos01.Questao01
 {
     public class ExecutarNumero
@@ -73,7 +80,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                 //    Console.WriteLine("Número completo por extenso: " + numero.ObterNumeroCompletoPorExtenso());
                 //}
                 Console.Write("\n");
-            }   
+            }
         }
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Aluno: Douglas Braatz de Souza
+
 /*Objetivo: Dado a entrada de um valor decimal, deverá escrever o mesmo por extenso.
 - Classe: Número
 
@@ -613,42 +615,42 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                 dezenaPorExtenso = "dez";
             }
 
-            if (dezena == 2)
+            else if (dezena == 2)
             {
                 dezenaPorExtenso = "vinte";
             }
 
-            if (dezena == 3)
+            else if (dezena == 3)
             {
                 dezenaPorExtenso = "trinta";
             }
 
-            if (dezena == 4)
+            else if (dezena == 4)
             {
                 dezenaPorExtenso = "quarenta";
             }
 
-            if (dezena == 5)
+            else if (dezena == 5)
             {
                 dezenaPorExtenso = "cinquenta";
             }
 
-            if (dezena == 6)
+            else if (dezena == 6)
             {
                 dezenaPorExtenso = "sessenta";
             }
 
-            if (dezena == 7)
+            else if (dezena == 7)
             {
                 dezenaPorExtenso = "setenta";
             }
 
-            if (dezena == 8)
+            else if (dezena == 8)
             {
                 dezenaPorExtenso = "oitenta";
             }
 
-            if (dezena == 9)
+            else if (dezena == 9)
             {
                 dezenaPorExtenso = "noventa";
             }
@@ -667,42 +669,42 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                 centenaPorExtenso = "cem";
             }
 
-            if (centena == 2)
+            else if (centena == 2)
             {
                 centenaPorExtenso = "duzentos";
             }
 
-            if (centena == 3)
+            else if (centena == 3)
             {
                 centenaPorExtenso = "trezentos";
             }
 
-            if (centena == 4)
+            else if (centena == 4)
             {
                 centenaPorExtenso = "quatrocentos";
             }
 
-            if (centena == 5)
+            else if (centena == 5)
             {
                 centenaPorExtenso = "quinhentos";
             }
 
-            if (centena == 6)
+            else if (centena == 6)
             {
                 centenaPorExtenso = "seiscentos";
             }
 
-            if (centena == 7)
+            else if (centena == 7)
             {
                 centenaPorExtenso = "setecentos";
             }
 
-            if (centena == 8)
+            else if (centena == 8)
             {
                 centenaPorExtenso = "oitocentos";
             }
 
-            if (centena == 9)
+            else if (centena == 9)
             {
                 centenaPorExtenso = "novecentos";
             }
@@ -714,49 +716,49 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             string milharPorExtenso = "";
             string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
-            int milhar = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 4, 1));
+            int milhar = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 5, 1));
 
             if (milhar == 1)
             {
                 milharPorExtenso = "mil";
             }
 
-            if (milhar == 2)
+            else if (milhar == 2)
             {
                 milharPorExtenso = "dois mil";
             }
 
-            if (milhar == 3)
+            else if (milhar == 3)
             {
                 milharPorExtenso = "três mil";
             }
 
-            if (milhar == 4)
+            else if (milhar == 4)
             {
                 milharPorExtenso = "quatro mil";
             }
 
-            if (milhar == 5)
+            else if (milhar == 5)
             {
                 milharPorExtenso = "cinco mil";
             }
 
-            if (milhar == 6)
+            else if (milhar == 6)
             {
                 milharPorExtenso = "seis mil";
             }
 
-            if (milhar == 7)
+            else if (milhar == 7)
             {
                 milharPorExtenso = "sete mil";
             }
 
-            if (milhar == 8)
+            else if (milhar == 8)
             {
                 milharPorExtenso = "oito mil";
             }
 
-            if (milhar == 9)
+            else if (milhar == 9)
             {
                 milharPorExtenso = "nove mil";
             }
@@ -791,7 +793,5 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
         //    return numeroCompletoPorExtenso;
         //}
-
-
     }
 }
