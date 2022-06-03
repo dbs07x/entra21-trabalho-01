@@ -9,6 +9,7 @@ using Xunit;
 
 namespace TrabalhoOrientacaoObjetos01.Tests.Questao03
 {
+    //Samuel Lopes
     public class RelogioTests
     {
         [Theory]

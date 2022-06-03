@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao03
 {
+    //Samuel Lopes 
     public class ExecutarRelogio
     {
         public void Executar()
