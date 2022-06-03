@@ -41,7 +41,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public string ObterDecimalPorExtenso()
         {
             string decimalPorExtenso = "";
-            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int unidadeDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 2, 1));
             int dezenaDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 1, 1));
@@ -550,7 +550,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public string ObterUnidadePorExtenso()
         {
             string unidadePorExtenso = "";
-            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int unidade = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 1, 1));
 
@@ -559,42 +559,42 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                 unidadePorExtenso = "um";
             }
 
-            if (unidade == 2)
+            else if (unidade == 2)
             {
                 unidadePorExtenso = "dois";
             }
 
-            if (unidade == 3)
+            else if (unidade == 3)
             {
                 unidadePorExtenso = "três";
             }
 
-            if (unidade == 4)
+            else if (unidade == 4)
             {
                 unidadePorExtenso = "quatro";
             }
 
-            if (unidade == 5)
+            else if (unidade == 5)
             {
                 unidadePorExtenso = "cinco";
             }
 
-            if (unidade == 6)
+            else if (unidade == 6)
             {
                 unidadePorExtenso = "seis";
             }
 
-            if (unidade == 7)
+            else if (unidade == 7)
             {
                 unidadePorExtenso = "sete";
             }
 
-            if (unidade == 8)
+            else if (unidade == 8)
             {
                 unidadePorExtenso = "oito";
             }
 
-            if (unidade == 9)
+            else if (unidade == 9)
             {
                 unidadePorExtenso = "nove";
             }
@@ -604,7 +604,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public string ObterDezenaPorExtenso()
         {
             string dezenaPorExtenso = "";
-            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int dezena = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 2, 1));
 
@@ -658,7 +658,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public string ObterCentenaPorExtenso()
         {
             string centenaPorExtenso = "";
-            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int centena = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 3, 1));
 
@@ -712,7 +712,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public string ObterUnidadeDeMilharPorExtenso()
         {
             string milharPorExtenso = "";
-            string numeroSolicitadoString = NumeroSolicitado.ToString();
+            string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int milhar = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 4, 1));
 
