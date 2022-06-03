@@ -1,8 +1,10 @@
-﻿using System;
+﻿using FluentAssertions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrabalhoOrientacaoObjetos01.Questao01;
 using Xunit;
 
 /*-Cenários de teste unitários:
@@ -18,17 +20,19 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
     public class NumeroTests
     {
         [Theory]
-        [InlineData()]
+        [InlineData(01, "um")]
 
-        public void ValidarTodosNumerosDecimais(int numeroDecimal, string numeroDecimalPorExtenso)
+        public void ValidarTodosNumerosDecimais(int numeroSolicitado, string numeroDecimalPorExtenso)
         {
             //Arrange
             var numero = new Numero();
-
+            numero.NumeroSolicitado = numeroSolicitado;
 
             //Act
+            var obterDecimalPorExtenso = numero.ObterDecimalPorExtenso();
 
             //Assert
+            obterDecimalPorExtenso.Should().Be(numeroDecimalPorExtenso);
         }
 
     }
