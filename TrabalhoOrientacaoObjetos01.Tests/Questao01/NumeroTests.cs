@@ -23,6 +23,7 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
     public class NumeroTests
     {
         [Theory]
+        [InlineData(0.00, "zero")]
         [InlineData(0.01, "um")]
         [InlineData(0.02, "dois")]
         [InlineData(0.03, "três")]
@@ -32,6 +33,21 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
         [InlineData(0.07, "sete")]
         [InlineData(0.08, "oito")]
         [InlineData(0.09, "nove")]
+
+        public void ValidarTodosNumerosUnidadesDeDecimais(double numeroSolicitado, string unidadeDecimalPorExtenso)
+        {
+            //Arrange
+            var numero = new Numero();
+            numero.NumeroSolicitado = numeroSolicitado;
+
+            //Act
+            var obterUnidadeDecimalPorExtenso = numero.ObterUnidadeDecimalPorExtenso();
+
+            //Assert
+            obterUnidadeDecimalPorExtenso.Should().Be(unidadeDecimalPorExtenso);
+        }
+
+        [Theory]
         [InlineData(0.10, "dez")]
         [InlineData(0.11, "onze")]
         [InlineData(0.12, "doze")]
@@ -122,17 +138,17 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
         [InlineData(0.98, "noventa e oito")]
         [InlineData(0.99, "noventa e nove")]
 
-        public void ValidarTodosNumerosDecimais(double numeroSolicitado, string decimalPorExtenso)
+        public void ValidarTodosNumerosDezenasDeDecimais(double numeroSolicitado, string dezenaDecimalPorExtenso)
         {
             //Arrange
             var numero = new Numero();
             numero.NumeroSolicitado = numeroSolicitado;
 
             //Act
-            var obterDecimalPorExtenso = numero.ObterDecimalPorExtenso();
+            var obterDezenaDecimalPorExtenso = numero.ObterDezenaDecimalPorExtenso();
 
             //Assert
-            obterDecimalPorExtenso.Should().Be(decimalPorExtenso);
+            obterDezenaDecimalPorExtenso.Should().Be(dezenaDecimalPorExtenso);
         }
 
         [Theory]
@@ -160,14 +176,23 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
         }
 
         [Theory]
+        [InlineData(10, "dez")]
         [InlineData(11.00, "dez")]
+        [InlineData(20, "vinte")]
         [InlineData(22.00, "vinte")]
+        [InlineData(30, "trinta")]
         [InlineData(33.00, "trinta")]
+        [InlineData(40, "quarenta")]
         [InlineData(44.00, "quarenta")]
+        [InlineData(50, "cinquenta")]
         [InlineData(55.00, "cinquenta")]
+        [InlineData(60, "sessenta")]
         [InlineData(66.00, "sessenta")]
+        [InlineData(70, "setenta")]
         [InlineData(77.00, "setenta")]
+        [InlineData(80, "oitenta")]
         [InlineData(88.00, "oitenta")]
+        [InlineData(90, "noventa")]
         [InlineData(99.00, "noventa")]
 
         public void ValidarTodosNumerosMenoresQueCem(double numeroSolicitado, string dezenaPorExtenso)
@@ -232,5 +257,23 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
             obterMilharPorExtenso.Should().Be(milharPorExtenso);
         }
 
+        [Theory]
+        [InlineData(1000, "mil")]
+        [InlineData(1100, "mil e cem")]
+        [InlineData(1110, "mil cento e dez")]
+        [InlineData(1111.01, "mil cento e onze e um")]
+
+        public void ObterNumeroCompletoPorExtenso(double numeroSolicitado, string numeroCompletoPorExtenso)
+        {
+            //Arrange
+            var numero = new Numero();
+            numero.NumeroSolicitado = numeroSolicitado;
+
+            //Act
+            var obterNumeroCompletoPorExtenso = numero.ObterNumeroCompletoPorExtenso();
+
+            //Assert
+            obterNumeroCompletoPorExtenso.Should().Be(numeroCompletoPorExtenso);
+        }
     }
 }
