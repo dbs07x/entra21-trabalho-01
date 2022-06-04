@@ -175,7 +175,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             }
             else if ((primeiroCaracterMinuto == 1) && (segundoCaracterMinuto == 1))
             {
-                minutoPorExtenso = "Onze Minutos";
+                minutoPorExtenso = "Onze minutos";
             }
             else if ((primeiroCaracterMinuto == 1) && (segundoCaracterMinuto == 2))
             {
@@ -187,7 +187,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             }
             else if ((primeiroCaracterMinuto == 1) && (segundoCaracterMinuto == 4))
             {
-                minutoPorExtenso = "quatorze minutos";
+                minutoPorExtenso = "Quatorze minutos";
             }
             else if ((primeiroCaracterMinuto == 1) && (segundoCaracterMinuto == 5))
             {
