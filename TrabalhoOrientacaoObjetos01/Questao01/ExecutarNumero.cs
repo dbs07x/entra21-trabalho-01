@@ -21,8 +21,8 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             var opcaoMenu = 0;
             while (opcaoMenu == 0)
             {
-                Console.Write(@"1 - ObterUnidadeDecimalPorExtenso
-2 - ObterDezenaDecimalPorExtenso
+                Console.Write(@"1 - ObterCentesimalPorExtenso
+2 - ObterDecimalPorExtenso
 3 - ObterUnidadePorExtenso
 4 - ObterDezenaPorExtenso
 5 - ObterCentenaPorExtenso
@@ -38,7 +38,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     Numero numero = new Numero();
                     Console.WriteLine("Digite um número: ");
                     numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Unidade decimal por extenso: " + numero.ObterUnidadeDecimalPorExtenso());
+                    Console.WriteLine("Centesimal por extenso: " + numero.ObterCentesimalPorExtenso());
                 }
 
                 if (menu == 2)
@@ -46,7 +46,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                     Numero numero = new Numero();
                     Console.WriteLine("Digite um número: ");
                     numero.NumeroSolicitado = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Dezena decimal por extenso: " + numero.ObterDezenaDecimalPorExtenso());
+                    Console.WriteLine("Decimal por extenso: " + numero.ObterDecimalPorExtenso());
                 }
 
                 if (menu == 3)

@@ -39,520 +39,11 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
     {
         public double NumeroSolicitado;
 
-        //Como os métodos solicitados vão até unidade de milhar, definimos que o valor máximo permitido será 9999,99
-        //public string ObterDecimalPorExtenso()
-        //{
-        //    string decimalPorExtenso = "";
-        //    string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
-        //    int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
-        //    int unidadeDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 2, 1));
-        //    int dezenaDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 1, 1));
+        //Como os métodos solicitados vão até unidade de milhar, definimos os métodos para o valor máximo de 9999,99
 
-        //    if ((unidadeDecimal == 0) && (dezenaDecimal == 0))
-        //    {
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "um";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "três";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 0) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "dez";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "onze";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "doze";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "treze";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "catorze";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "quinze";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "dezesseis";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "dezessete";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "dezoito";
-        //    }
-
-        //    else if ((dezenaDecimal == 1) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "dezenove";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "vinte";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "vinte e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "vinte e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "vinte e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "vinte e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "vinte e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "vinte e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "vinte e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "vinte e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 2) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "vinte e nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "trinta";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "trinta e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "trinta e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "trinta e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "trinta e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "trinta e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "trinta e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "trinta e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "trinta e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 3) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "trinta e nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "quarenta";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "quarenta e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "quarenta e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "quarenta e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "quarenta e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "quarenta e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "quarenta e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "quarenta e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "quarenta e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 4) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "quarenta e nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "cinquenta";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "cinquenta e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "cinquenta e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "cinquenta e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "cinquenta e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "cinquenta e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "cinquenta e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "cinquenta e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "cinquenta e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 5) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "cinquenta e nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "sessenta";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "sessenta e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "sessenta e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "sessenta e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "sessenta e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "sessenta e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "sessenta e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "sessenta e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "sessenta e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 6) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "sessenta e nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "setenta";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "setenta e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "setenta e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "setenta e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "setenta e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "setenta e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "setenta e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "setenta e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "setenta e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 7) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "setenta e nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "oitenta";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "oitenta e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "oitenta e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "oitenta e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "oitenta e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "oitenta e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "oitenta e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "oitenta e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "oitenta e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 8) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "oitenta e nove";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 0))
-        //    {
-        //        decimalPorExtenso = "noventa";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 1))
-        //    {
-        //        decimalPorExtenso = "noventa e um";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 2))
-        //    {
-        //        decimalPorExtenso = "noventa e dois";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 3))
-        //    {
-        //        decimalPorExtenso = "noventa e três";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 4))
-        //    {
-        //        decimalPorExtenso = "noventa e quatro";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 5))
-        //    {
-        //        decimalPorExtenso = "noventa e cinco";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 6))
-        //    {
-        //        decimalPorExtenso = "noventa e seis";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 7))
-        //    {
-        //        decimalPorExtenso = "noventa e sete";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 8))
-        //    {
-        //        decimalPorExtenso = "noventa e oito";
-        //    }
-
-        //    else if ((dezenaDecimal == 9) && (unidadeDecimal == 9))
-        //    {
-        //        decimalPorExtenso = "noventa e nove";
-        //    }
-
-        //    return decimalPorExtenso;
-        //}
-
-        public string ObterUnidadeDecimalPorExtenso()
+        public string ObterCentesimalPorExtenso()
         {
-            string unidadeDecimalPorExtenso = "";
+            string numeroCentesimalPorExtenso = "";
             string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int unidadeDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 2, 1));
@@ -560,60 +51,59 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             if ((dezenaDecimal == 0) && (unidadeDecimal == 0))
             {
-                unidadeDecimalPorExtenso = "zero";
+                numeroCentesimalPorExtenso = "zero";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 1))
             {
-                unidadeDecimalPorExtenso = "um";
+                numeroCentesimalPorExtenso = "um centésimo";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 2))
             {
-                unidadeDecimalPorExtenso = "dois";
+                numeroCentesimalPorExtenso = "dois centésimos";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 3))
             {
-                unidadeDecimalPorExtenso = "três";
+                numeroCentesimalPorExtenso = "três centésimos";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 4))
             {
-                unidadeDecimalPorExtenso = "quatro";
+                numeroCentesimalPorExtenso = "quatro centésimos";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 5))
             {
-                unidadeDecimalPorExtenso = "cinco";
+                numeroCentesimalPorExtenso = "cinco centésimos";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 6))
             {
-                unidadeDecimalPorExtenso = "seis";
+                numeroCentesimalPorExtenso = "seis centésimos";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 7))
             {
-                unidadeDecimalPorExtenso = "sete";
+                numeroCentesimalPorExtenso = "sete centésimos";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 8))
             {
-                unidadeDecimalPorExtenso = "oito";
+                numeroCentesimalPorExtenso = "oito centésimos";
             }
 
             else if ((dezenaDecimal == 0) && (unidadeDecimal == 9))
             {
-                unidadeDecimalPorExtenso = "nove";
+                numeroCentesimalPorExtenso = "nove centésimos";
             }
 
-            return unidadeDecimalPorExtenso;
+            return numeroCentesimalPorExtenso;
         }
-
-        public string ObterDezenaDecimalPorExtenso()
+        public string ObterDecimalPorExtenso()
         {
-            string dezenaDecimalPorExtenso = "";
+            string decimalPorExtenso = "";
             string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int unidadeDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 2, 1));
@@ -625,457 +115,456 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "dez";
+                decimalPorExtenso = "dez centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "onze";
+                decimalPorExtenso = "onze centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "doze";
+                decimalPorExtenso = "doze centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "treze";
+                decimalPorExtenso = "treze centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "catorze";
+                decimalPorExtenso = "catorze centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "quinze";
+                decimalPorExtenso = "quinze centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "dezesseis";
+                decimalPorExtenso = "dezesseis centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "dezessete";
+                decimalPorExtenso = "dezessete centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "dezoito";
+                decimalPorExtenso = "dezoito centésimos";
             }
 
             else if ((dezenaDecimal == 1) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "dezenove";
+                decimalPorExtenso = "dezenove centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "vinte";
+                decimalPorExtenso = "vinte centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "vinte e um";
+                decimalPorExtenso = "vinte e um centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "vinte e dois";
+                decimalPorExtenso = "vinte e dois centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "vinte e três";
+                decimalPorExtenso = "vinte e três centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "vinte e quatro";
+                decimalPorExtenso = "vinte e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "vinte e cinco";
+                decimalPorExtenso = "vinte e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "vinte e seis";
+                decimalPorExtenso = "vinte e seis centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "vinte e sete";
+                decimalPorExtenso = "vinte e sete centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "vinte e oito";
+                decimalPorExtenso = "vinte e oito centésimos";
             }
 
             else if ((dezenaDecimal == 2) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "vinte e nove";
+                decimalPorExtenso = "vinte e nove centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "trinta";
+                decimalPorExtenso = "trinta centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "trinta e um";
+                decimalPorExtenso = "trinta e um centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "trinta e dois";
+                decimalPorExtenso = "trinta e dois centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "trinta e três";
+                decimalPorExtenso = "trinta e três centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "trinta e quatro";
+                decimalPorExtenso = "trinta e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "trinta e cinco";
+                decimalPorExtenso = "trinta e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "trinta e seis";
+                decimalPorExtenso = "trinta e seis centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "trinta e sete";
+                decimalPorExtenso = "trinta e sete centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "trinta e oito";
+                decimalPorExtenso = "trinta e oito centésimos";
             }
 
             else if ((dezenaDecimal == 3) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "trinta e nove";
+                decimalPorExtenso = "trinta e nove centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "quarenta";
+                decimalPorExtenso = "quarenta centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "quarenta e um";
+                decimalPorExtenso = "quarenta e um centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "quarenta e dois";
+                decimalPorExtenso = "quarenta e dois centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "quarenta e três";
+                decimalPorExtenso = "quarenta e três centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "quarenta e quatro";
+                decimalPorExtenso = "quarenta e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "quarenta e cinco";
+                decimalPorExtenso = "quarenta e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "quarenta e seis";
+                decimalPorExtenso = "quarenta e seis centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "quarenta e sete";
+                decimalPorExtenso = "quarenta e sete centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "quarenta e oito";
+                decimalPorExtenso = "quarenta e oito centésimos";
             }
 
             else if ((dezenaDecimal == 4) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "quarenta e nove";
+                decimalPorExtenso = "quarenta e nove centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "cinquenta";
+                decimalPorExtenso = "cinquenta centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "cinquenta e um";
+                decimalPorExtenso = "cinquenta e um centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "cinquenta e dois";
+                decimalPorExtenso = "cinquenta e dois centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "cinquenta e três";
+                decimalPorExtenso = "cinquenta e três centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "cinquenta e quatro";
+                decimalPorExtenso = "cinquenta e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "cinquenta e cinco";
+                decimalPorExtenso = "cinquenta e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "cinquenta e seis";
+                decimalPorExtenso = "cinquenta e seis centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "cinquenta e sete";
+                decimalPorExtenso = "cinquenta e sete centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "cinquenta e oito";
+                decimalPorExtenso = "cinquenta e oito centésimos";
             }
 
             else if ((dezenaDecimal == 5) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "cinquenta e nove";
+                decimalPorExtenso = "cinquenta e nove centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "sessenta";
+                decimalPorExtenso = "sessenta centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "sessenta e um";
+                decimalPorExtenso = "sessenta e um centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "sessenta e dois";
+                decimalPorExtenso = "sessenta e dois centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "sessenta e três";
+                decimalPorExtenso = "sessenta e três centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "sessenta e quatro";
+                decimalPorExtenso = "sessenta e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "sessenta e cinco";
+                decimalPorExtenso = "sessenta e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "sessenta e seis";
+                decimalPorExtenso = "sessenta e seis centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "sessenta e sete";
+                decimalPorExtenso = "sessenta e sete centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "sessenta e oito";
+                decimalPorExtenso = "sessenta e oito centésimos";
             }
 
             else if ((dezenaDecimal == 6) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "sessenta e nove";
+                decimalPorExtenso = "sessenta e nove centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "setenta";
+                decimalPorExtenso = "setenta centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "setenta e um";
+                decimalPorExtenso = "setenta e um centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "setenta e dois";
+                decimalPorExtenso = "setenta e dois centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "setenta e três";
+                decimalPorExtenso = "setenta e três centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "setenta e quatro";
+                decimalPorExtenso = "setenta e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "setenta e cinco";
+                decimalPorExtenso = "setenta e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "setenta e seis";
+                decimalPorExtenso = "setenta e seis centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "setenta e sete";
+                decimalPorExtenso = "setenta e sete centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "setenta e oito";
+                decimalPorExtenso = "setenta e oito centésimos";
             }
 
             else if ((dezenaDecimal == 7) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "setenta e nove";
+                decimalPorExtenso = "setenta e nove centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "oitenta";
+                decimalPorExtenso = "oitenta centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "oitenta e um";
+                decimalPorExtenso = "oitenta e um centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "oitenta e dois";
+                decimalPorExtenso = "oitenta e dois centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "oitenta e três";
+                decimalPorExtenso = "oitenta e três centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "oitenta e quatro";
+                decimalPorExtenso = "oitenta e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "oitenta e cinco";
+                decimalPorExtenso = "oitenta e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "oitenta e seis";
+                decimalPorExtenso = "oitenta e seis centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "oitenta e sete";
+                decimalPorExtenso = "oitenta e sete centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "oitenta e oito";
+                decimalPorExtenso = "oitenta e oito centésimos";
             }
 
             else if ((dezenaDecimal == 8) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "oitenta e nove";
+                decimalPorExtenso = "oitenta e nove centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 0))
             {
-                dezenaDecimalPorExtenso = "noventa";
+                decimalPorExtenso = "noventa centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 1))
             {
-                dezenaDecimalPorExtenso = "noventa e um";
+                decimalPorExtenso = "noventa e um centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 2))
             {
-                dezenaDecimalPorExtenso = "noventa e dois";
+                decimalPorExtenso = "noventa e dois centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 3))
             {
-                dezenaDecimalPorExtenso = "noventa e três";
+                decimalPorExtenso = "noventa e três centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 4))
             {
-                dezenaDecimalPorExtenso = "noventa e quatro";
+                decimalPorExtenso = "noventa e quatro centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 5))
             {
-                dezenaDecimalPorExtenso = "noventa e cinco";
+                decimalPorExtenso = "noventa e cinco centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 6))
             {
-                dezenaDecimalPorExtenso = "noventa e seis";
+                decimalPorExtenso = "noventa e seis centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 7))
             {
-                dezenaDecimalPorExtenso = "noventa e sete";
+                decimalPorExtenso = "noventa e sete centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 8))
             {
-                dezenaDecimalPorExtenso = "noventa e oito";
+                decimalPorExtenso = "noventa e oito centésimos";
             }
 
             else if ((dezenaDecimal == 9) && (unidadeDecimal == 9))
             {
-                dezenaDecimalPorExtenso = "noventa e nove";
+                decimalPorExtenso = "noventa e nove centésimos";
             }
 
-            return dezenaDecimalPorExtenso;
+            return decimalPorExtenso;
         }
-
         public string ObterUnidadePorExtenso()
         {
             string unidadePorExtenso = "";
@@ -1136,50 +625,456 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             string numeroSolicitadoString = NumeroSolicitado.ToString("N2");
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int dezena = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 2, 1));
+            int unidade = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 1, 1));
 
-            if (dezena == 1)
+            if ((dezena == 1) && (unidade == 0))
             {
                 dezenaPorExtenso = "dez";
             }
 
-            else if (dezena == 2)
+            else if ((dezena == 1) && (unidade == 1))
+            {
+                dezenaPorExtenso = "onze";
+            }
+
+            else if ((dezena == 1) && (unidade == 2))
+            {
+                dezenaPorExtenso = "doze";
+            }
+
+            else if ((dezena == 1) && (unidade == 3))
+            {
+                dezenaPorExtenso = "treze";
+            }
+
+            else if ((dezena == 1) && (unidade == 4))
+            {
+                dezenaPorExtenso = "catorze";
+            }
+
+            else if ((dezena == 1) && (unidade == 5))
+            {
+                dezenaPorExtenso = "quinze";
+            }
+
+            else if ((dezena == 1) && (unidade == 6))
+            {
+                dezenaPorExtenso = "dezesseis";
+            }
+
+            else if ((dezena == 1) && (unidade == 7))
+            {
+                dezenaPorExtenso = "dezessete";
+            }
+
+            else if ((dezena == 1) && (unidade == 8))
+            {
+                dezenaPorExtenso = "dezoito";
+            }
+
+            else if ((dezena == 1) && (unidade == 9))
+            {
+                dezenaPorExtenso = "dezenove";
+            }
+
+            else if ((dezena == 2) && (unidade == 0))
             {
                 dezenaPorExtenso = "vinte";
             }
 
-            else if (dezena == 3)
+            else if ((dezena == 2) && (unidade == 1))
+            {
+                dezenaPorExtenso = "vinte e um";
+            }
+
+            else if ((dezena == 2) && (unidade == 2))
+            {
+                dezenaPorExtenso = "vinte e dois";
+            }
+
+            else if ((dezena == 2) && (unidade == 3))
+            {
+                dezenaPorExtenso = "vinte e três";
+            }
+
+            else if ((dezena == 2) && (unidade == 4))
+            {
+                dezenaPorExtenso = "vinte e quatro";
+            }
+
+            else if ((dezena == 2) && (unidade == 5))
+            {
+                dezenaPorExtenso = "vinte e cinco";
+            }
+
+            else if ((dezena == 2) && (unidade == 6))
+            {
+                dezenaPorExtenso = "vinte e seis";
+            }
+
+            else if ((dezena == 2) && (unidade == 7))
+            {
+                dezenaPorExtenso = "vinte e sete";
+            }
+
+            else if ((dezena == 2) && (unidade == 8))
+            {
+                dezenaPorExtenso = "vinte e oito";
+            }
+
+            else if ((dezena == 2) && (unidade == 9))
+            {
+                dezenaPorExtenso = "vinte e nove";
+            }
+
+            else if ((dezena == 3) && (unidade == 0))
             {
                 dezenaPorExtenso = "trinta";
             }
 
-            else if (dezena == 4)
+            else if ((dezena == 3) && (unidade == 1))
+            {
+                dezenaPorExtenso = "trinta e um";
+            }
+
+            else if ((dezena == 3) && (unidade == 2))
+            {
+                dezenaPorExtenso = "trinta e dois";
+            }
+
+            else if ((dezena == 3) && (unidade == 3))
+            {
+                dezenaPorExtenso = "trinta e três";
+            }
+
+            else if ((dezena == 3) && (unidade == 4))
+            {
+                dezenaPorExtenso = "trinta e quatro";
+            }
+
+            else if ((dezena == 3) && (unidade == 5))
+            {
+                dezenaPorExtenso = "trinta e cinco";
+            }
+
+            else if ((dezena == 3) && (unidade == 6))
+            {
+                dezenaPorExtenso = "trinta e seis";
+            }
+
+            else if ((dezena == 3) && (unidade == 7))
+            {
+                dezenaPorExtenso = "trinta e sete";
+            }
+
+            else if ((dezena == 3) && (unidade == 8))
+            {
+                dezenaPorExtenso = "trinta e oito";
+            }
+
+            else if ((dezena == 3) && (unidade == 9))
+            {
+                dezenaPorExtenso = "trinta e nove";
+            }
+
+            else if ((dezena == 4) && (unidade == 0))
             {
                 dezenaPorExtenso = "quarenta";
             }
 
-            else if (dezena == 5)
+            else if ((dezena == 4) && (unidade == 1))
+            {
+                dezenaPorExtenso = "quarenta e um";
+            }
+
+            else if ((dezena == 4) && (unidade == 2))
+            {
+                dezenaPorExtenso = "quarenta e dois";
+            }
+
+            else if ((dezena == 4) && (unidade == 3))
+            {
+                dezenaPorExtenso = "quarenta e três";
+            }
+
+            else if ((dezena == 4) && (unidade == 4))
+            {
+                dezenaPorExtenso = "quarenta e quatro";
+            }
+
+            else if ((dezena == 4) && (unidade == 5))
+            {
+                dezenaPorExtenso = "quarenta e cinco";
+            }
+
+            else if ((dezena == 4) && (unidade == 6))
+            {
+                dezenaPorExtenso = "quarenta e seis";
+            }
+
+            else if ((dezena == 4) && (unidade == 7))
+            {
+                dezenaPorExtenso = "quarenta e sete";
+            }
+
+            else if ((dezena == 4) && (unidade == 8))
+            {
+                dezenaPorExtenso = "quarenta e oito";
+            }
+
+            else if ((dezena == 4) && (unidade == 9))
+            {
+                dezenaPorExtenso = "quarenta e nove";
+            }
+
+            else if ((dezena == 5) && (unidade == 0))
             {
                 dezenaPorExtenso = "cinquenta";
             }
 
-            else if (dezena == 6)
+            else if ((dezena == 5) && (unidade == 1))
+            {
+                dezenaPorExtenso = "cinquenta e um";
+            }
+
+            else if ((dezena == 5) && (unidade == 2))
+            {
+                dezenaPorExtenso = "cinquenta e dois";
+            }
+
+            else if ((dezena == 5) && (unidade == 3))
+            {
+                dezenaPorExtenso = "cinquenta e três";
+            }
+
+            else if ((dezena == 5) && (unidade == 4))
+            {
+                dezenaPorExtenso = "cinquenta e quatro";
+            }
+
+            else if ((dezena == 5) && (unidade == 5))
+            {
+                dezenaPorExtenso = "cinquenta e cinco";
+            }
+
+            else if ((dezena == 5) && (unidade == 6))
+            {
+                dezenaPorExtenso = "cinquenta e seis";
+            }
+
+            else if ((dezena == 5) && (unidade == 7))
+            {
+                dezenaPorExtenso = "cinquenta e sete";
+            }
+
+            else if ((dezena == 5) && (unidade == 8))
+            {
+                dezenaPorExtenso = "cinquenta e oito";
+            }
+
+            else if ((dezena == 5) && (unidade == 9))
+            {
+                dezenaPorExtenso = "cinquenta e nove";
+            }
+
+            else if ((dezena == 6) && (unidade == 0))
             {
                 dezenaPorExtenso = "sessenta";
             }
 
-            else if (dezena == 7)
+            else if ((dezena == 6) && (unidade == 1))
+            {
+                dezenaPorExtenso = "sessenta e um";
+            }
+
+            else if ((dezena == 6) && (unidade == 2))
+            {
+                dezenaPorExtenso = "sessenta e dois";
+            }
+
+            else if ((dezena == 6) && (unidade == 3))
+            {
+                dezenaPorExtenso = "sessenta e três";
+            }
+
+            else if ((dezena == 6) && (unidade == 4))
+            {
+                dezenaPorExtenso = "sessenta e quatro";
+            }
+
+            else if ((dezena == 6) && (unidade == 5))
+            {
+                dezenaPorExtenso = "sessenta e cinco";
+            }
+
+            else if ((dezena == 6) && (unidade == 6))
+            {
+                dezenaPorExtenso = "sessenta e seis";
+            }
+
+            else if ((dezena == 6) && (unidade == 7))
+            {
+                dezenaPorExtenso = "sessenta e sete";
+            }
+
+            else if ((dezena == 6) && (unidade == 8))
+            {
+                dezenaPorExtenso = "sessenta e oito";
+            }
+
+            else if ((dezena == 6) && (unidade == 9))
+            {
+                dezenaPorExtenso = "sessenta e nove";
+            }
+
+            else if ((dezena == 7) && (unidade == 0))
             {
                 dezenaPorExtenso = "setenta";
             }
 
-            else if (dezena == 8)
+            else if ((dezena == 7) && (unidade == 1))
+            {
+                dezenaPorExtenso = "setenta e um";
+            }
+
+            else if ((dezena == 7) && (unidade == 2))
+            {
+                dezenaPorExtenso = "setenta e dois";
+            }
+
+            else if ((dezena == 7) && (unidade == 3))
+            {
+                dezenaPorExtenso = "setenta e três";
+            }
+
+            else if ((dezena == 7) && (unidade == 4))
+            {
+                dezenaPorExtenso = "setenta e quatro";
+            }
+
+            else if ((dezena == 7) && (unidade == 5))
+            {
+                dezenaPorExtenso = "setenta e cinco";
+            }
+
+            else if ((dezena == 7) && (unidade == 6))
+            {
+                dezenaPorExtenso = "setenta e seis";
+            }
+
+            else if ((dezena == 7) && (unidade == 7))
+            {
+                dezenaPorExtenso = "setenta e sete";
+            }
+
+            else if ((dezena == 7) && (unidade == 8))
+            {
+                dezenaPorExtenso = "setenta e oito";
+            }
+
+            else if ((dezena == 7) && (unidade == 9))
+            {
+                dezenaPorExtenso = "setenta e nove";
+            }
+
+            else if ((dezena == 8) && (unidade == 0))
             {
                 dezenaPorExtenso = "oitenta";
             }
 
-            else if (dezena == 9)
+            else if ((dezena == 8) && (unidade == 1))
+            {
+                dezenaPorExtenso = "oitenta e um";
+            }
+
+            else if ((dezena == 8) && (unidade == 2))
+            {
+                dezenaPorExtenso = "oitenta e dois";
+            }
+
+            else if ((dezena == 8) && (unidade == 3))
+            {
+                dezenaPorExtenso = "oitenta e três";
+            }
+
+            else if ((dezena == 8) && (unidade == 4))
+            {
+                dezenaPorExtenso = "oitenta e quatro";
+            }
+
+            else if ((dezena == 8) && (unidade == 5))
+            {
+                dezenaPorExtenso = "oitenta e cinco";
+            }
+
+            else if ((dezena == 8) && (unidade == 6))
+            {
+                dezenaPorExtenso = "oitenta e seis";
+            }
+
+            else if ((dezena == 8) && (unidade == 7))
+            {
+                dezenaPorExtenso = "oitenta e sete";
+            }
+
+            else if ((dezena == 8) && (unidade == 8))
+            {
+                dezenaPorExtenso = "oitenta e oito";
+            }
+
+            else if ((dezena == 8) && (unidade == 9))
+            {
+                dezenaPorExtenso = "oitenta e nove";
+            }
+
+            else if ((dezena == 9) && (unidade == 0))
             {
                 dezenaPorExtenso = "noventa";
+            }
+
+            else if ((dezena == 9) && (unidade == 1))
+            {
+                dezenaPorExtenso = "noventa e um";
+            }
+
+            else if ((dezena == 9) && (unidade == 2))
+            {
+                dezenaPorExtenso = "noventa e dois";
+            }
+
+            else if ((dezena == 9) && (unidade == 3))
+            {
+                dezenaPorExtenso = "noventa e três";
+            }
+
+            else if ((dezena == 9) && (unidade == 4))
+            {
+                dezenaPorExtenso = "noventa e quatro";
+            }
+
+            else if ((dezena == 9) && (unidade == 5))
+            {
+                dezenaPorExtenso = "noventa e cinco";
+            }
+
+            else if ((dezena == 9) && (unidade == 6))
+            {
+                dezenaPorExtenso = "noventa e seis";
+            }
+
+            else if ((dezena == 9) && (unidade == 7))
+            {
+                dezenaPorExtenso = "noventa e sete";
+            }
+
+            else if ((dezena == 9) && (unidade == 8))
+            {
+                dezenaPorExtenso = "noventa e oito";
+            }
+
+            else if ((dezena == 9) && (unidade == 9))
+            {
+                dezenaPorExtenso = "noventa e nove";
             }
 
             return dezenaPorExtenso;
@@ -1293,62 +1188,82 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             return milharPorExtenso;
         }
-
         public string ObterNumeroCompletoPorExtenso()
         {
             string numeroCompletoPorExtenso = "";
-            string numeroSolicitadoString = NumeroSolicitado.ToString("N2").PadLeft(7, '0');
+            string numeroSolicitadoString = NumeroSolicitado.ToString("N2").PadLeft(8, '0');
             int posicaoVirgulaDecimal = numeroSolicitadoString.IndexOf(",");
             int milhar = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 5, 1));
             int centena = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 3, 1));
             int dezena = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 2, 1));
             int unidade = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal - 1, 1));
-            int dezenaDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 1, 1));
-            int unidadeDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 2, 1));
+            int numeroDecimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 1, 1));
+            int centesimal = Convert.ToInt32(numeroSolicitadoString.Substring(posicaoVirgulaDecimal + 2, 1));
 
-            if (milhar > 0)
+            if ((milhar > 0) && (centena == 0) && (dezena == 0) && (unidade == 0))
             {
                 numeroCompletoPorExtenso = ObterUnidadeDeMilharPorExtenso();
             }
 
-            if ((centena == 1) && (dezena == 0) && (unidade == 0))
+            else if (milhar > 0)
             {
-                numeroCompletoPorExtenso = numeroCompletoPorExtenso + " e " + ObterCentenaPorExtenso();
+                numeroCompletoPorExtenso = ObterUnidadeDeMilharPorExtenso() + " ";
             }
 
-            else if (centena >= 1)
+            if ((milhar == 0) && (centena == 1) && (dezena == 0) && (unidade == 0))
             {
-                numeroCompletoPorExtenso = numeroCompletoPorExtenso + " cento e ";
+                numeroCompletoPorExtenso = numeroCompletoPorExtenso + "cem";
+            }
+
+            else if (centena == 1)
+            {
+                if ((dezena > 0) || (unidade > 0))
+                {
+                    numeroCompletoPorExtenso = numeroCompletoPorExtenso + "cento e ";
+                }
+            }
+
+            else if (centena > 1)
+            {
+                numeroCompletoPorExtenso = numeroCompletoPorExtenso + ObterCentenaPorExtenso() + " e ";
             }
 
             if (dezena > 0)
             {
-                numeroCompletoPorExtenso = numeroCompletoPorExtenso + ObterDezenaDecimalPorExtenso();
-            }
-
-            else if (dezena >= 2)
-            {
                 numeroCompletoPorExtenso = numeroCompletoPorExtenso + ObterDezenaPorExtenso();
             }
 
-            if ((unidade > 0) && (dezena >= 2))
+            if ((dezena < 1) && (unidade > 0))
             {
                 numeroCompletoPorExtenso = numeroCompletoPorExtenso + ObterUnidadePorExtenso();
             }
 
-            if ((dezenaDecimal == 0) && (unidadeDecimal > 1))
+            if ((milhar > 0) || (centena > 0) || (dezena > 0) || (unidade > 1))
             {
-                numeroCompletoPorExtenso = numeroCompletoPorExtenso + " e ";
+                numeroCompletoPorExtenso = numeroCompletoPorExtenso + " inteiros";
             }
 
-            else if (dezenaDecimal > 0)
+            else if ((milhar == 0) && (centena == 0) && (dezena == 0) && (unidade == 1))
             {
-                numeroCompletoPorExtenso = numeroCompletoPorExtenso + " e " + ObterDezenaDecimalPorExtenso();
+                numeroCompletoPorExtenso = numeroCompletoPorExtenso + " inteiro";
             }
 
-            if (unidadeDecimal > 0)
+            if ((milhar > 0) || (centena > 0) || (dezena > 0) || (unidade > 0))
             {
-                numeroCompletoPorExtenso = numeroCompletoPorExtenso + ObterUnidadeDecimalPorExtenso();
+                if ((numeroDecimal > 0) || (centesimal > 0))
+                {
+                    numeroCompletoPorExtenso = numeroCompletoPorExtenso + " e ";
+                }
+            }
+
+            if (numeroDecimal > 0)
+            {
+                numeroCompletoPorExtenso = numeroCompletoPorExtenso + ObterDecimalPorExtenso();
+            }
+
+            if ((numeroDecimal == 0) && (centesimal > 0))
+            {
+                numeroCompletoPorExtenso = numeroCompletoPorExtenso + ObterCentesimalPorExtenso();
             }
 
             return numeroCompletoPorExtenso;
