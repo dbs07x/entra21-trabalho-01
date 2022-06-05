@@ -353,8 +353,10 @@ namespace TrabalhoOrientacaoObjetos01.Tests.Questao01
         [InlineData(333.33, "trezentos e trinta e três inteiros e trinta e três centésimos")]
         [InlineData(1000, "mil inteiros")]
         [InlineData(1111.11, "mil cento e onze inteiros e onze centésimos")]
+        [InlineData(1234.56, "mil duzentos e trinta e quatro inteiros e cinquenta e seis centésimos")]
         [InlineData(2222.22, "dois mil duzentos e vinte e dois inteiros e vinte e dois centésimos")]
         [InlineData(3333.33, "três mil trezentos e trinta e três inteiros e trinta e três centésimos")]
+        [InlineData(9876.54, "nove mil oitocentos e setenta e seis inteiros e cinquenta e quatro centésimos")]
 
         public void ObterNumeroCompletoPorExtenso(double numeroSolicitado, string numeroCompletoPorExtenso)
         {
